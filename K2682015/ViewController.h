@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
+#include "KanjiViewController.h"
+@interface ViewController : UIViewController  <UITableViewDelegate, UITableViewDataSource>
+@property NSUInteger gradeIndex;
+@property (strong,nonatomic)NSMutableArray *grades;
 
 
 @end
